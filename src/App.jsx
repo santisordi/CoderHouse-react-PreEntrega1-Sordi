@@ -5,9 +5,9 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className='container-fluid'>
+    <div>
       <NavBar/>
-      <ItemListContainer/>
+      <ItemListContainer alerta="SITIO EN CONSTRUCCION"/>
       <Footer/>
     </div>
   );
