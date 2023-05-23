@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <NavBar/>
-      <ItemListContainer alerta="SITIO EN CONSTRUCCION"/>
+      <ItemListContainer/>
       <Footer/>
     </div>
   );

@@ -1,36 +1,43 @@
 import CartWidget from "./CartWidget";
 import LogoMatePava from "./images/favimate.png";
 
-
 const NavBar = () => {
     return (
-        <div className="container-fluid bg-body-tertiary">
-            <div className="row ">
-                <div className="col text-start p-2 ">
-                    <img src={LogoMatePava} alt="logo mate" width={45}/>
-                </div>
-                <div className="col ">
-                    <ul className="nav justify-content-center py-3">
-                        <li className="nav-item">
-                            <a className="nav-link active text-dark" aria-current="page" href="#"><b>Destacados</b></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link text-dark" href="#"><b>Mates</b></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link text-dark" href="#"><b>Termos</b></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link text-dark" href="#"><b>Equipos Materos</b></a>
-                        </li>
-                    </ul>
-                </div>
-                <div className="col text-end p-3">
-                    <CartWidget/>
-                </div>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+            <a className="navbar-brand" href="#">
+            <img src={LogoMatePava} alt="logo mate" width={45} />
+            </a>
+            <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav mx-auto">
+                <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Destacados</a>
+                </li>
+                <li className="nav-item">
+                <a className="nav-link" href="#">Mates</a>
+                </li>
+                <li className="nav-item">
+                <a className="nav-link" href="#">Termos</a>
+                </li>
+            </ul>
+            </div>
+            <div className="p-3">
+            <CartWidget />
             </div>
         </div>
-    )
-}
+        </nav>
+    );
+};
 
 export default NavBar;
