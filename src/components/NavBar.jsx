@@ -1,5 +1,5 @@
 import CartWidget from "./CartWidget";
-import LogoMatePava from "./images/favimate.png";
+const LogoMatePava = "assets/images/favimate.png"
 
 const NavBar = () => {
     return (

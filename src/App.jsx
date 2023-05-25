@@ -1,5 +1,7 @@
 import './App.css';
 import Footer from './components/Footer';
+import ItemDetailContainer from './components/ItemDetailContainer';
+
 import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 
@@ -8,6 +10,7 @@ function App() {
     <div>
       <NavBar/>
       <ItemListContainer/>
+      <ItemDetailContainer/>
       <Footer/>
     </div>
   );

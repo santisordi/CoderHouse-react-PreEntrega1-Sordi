@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import ItemCount from "./ItemCount";
 import productos from "./json/productos.json"
 import ItemList from "./ItemList";
 
@@ -23,7 +22,6 @@ useEffect(() => {
             <div className="container ">
                 <div className="row">
                 <ItemList productos={items}/> 
-                <ItemCount stock={15}/>
                 </div>
             </div>
     );

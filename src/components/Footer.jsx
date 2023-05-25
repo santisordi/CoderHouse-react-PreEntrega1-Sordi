@@ -1,6 +1,6 @@
-import FaceBook from "./images/facebook.svg"
-import Instagram from "./images/instagram.svg"
-import WhatsApp from "./images/whatsapp.svg"
+const faceBookImg= "assets/images/facebook.svg"
+const instaImg= "assets/images/instagram.svg"
+const whatsImg= "assets/images/facebook.svg"
 
 const Footer = ()=> {
     return (
@@ -10,9 +10,9 @@ const Footer = ()=> {
                     Ayuda
                 </div>
                 <div className="col text-center">
-                    <a href="https://web.whatsapp.com/" className="me-3"><img src={WhatsApp} alt="whatsapp" width={20}/></a>
-                    <a href="https://www.instagram.com/" className="me-3"><img src={Instagram} alt="Instagram" width={20}/></a>
-                    <a href="https://www.facebook.com/" className="me-3"><img src={FaceBook} alt="FaceBook" width={20}/></a>
+                    <a href="https://web.whatsapp.com/" className="me-3"><img src={whatsImg} alt="whatsapp" width={20}/></a>
+                    <a href="https://www.instagram.com/" className="me-3"><img src={instaImg} alt="Instagram" width={20}/></a>
+                    <a href="https://www.facebook.com/" className="me-3"><img src={faceBookImg} alt="FaceBook" width={20}/></a>
                 </div>
             </div>
 
