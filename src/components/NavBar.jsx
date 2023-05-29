@@ -1,13 +1,15 @@
 import CartWidget from "./CartWidget";
-const LogoMatePava = "assets/images/favimate.png"
+import { NavLink } from "react-router-dom";
+const LogoMatePava = "/assets/images/logo 2.png"
+
 
 const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-            <img src={LogoMatePava} alt="logo mate" width={45} />
-            </a>
+            <NavLink className="navbar-brand" to = {"/"}>
+            <img src={LogoMatePava} alt="logo mate" width={150} />
+            </NavLink>
             <button
             className="navbar-toggler"
             type="button"
@@ -20,15 +22,18 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav mx-auto">
+            <ul className="navbar-nav mx-auto fs-3">
                 <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Destacados</a>
+                <NavLink to= {"/destacados"} className="nav-link text-dark" aria-current="page" >Destacados</NavLink>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#">Mates</a>
+                <NavLink to= {"/category/Mate"} className="nav-link text-dark">Mates</NavLink>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#">Termos</a>
+                <NavLink to= {"/category/Matera"} className="nav-link text-dark">Materas</NavLink>
+                </li>
+                <li className="nav-item">
+                <NavLink to= {"/category/Set asado"} className="nav-link text-dark">Todo para el Asado</NavLink>
                 </li>
             </ul>
             </div>

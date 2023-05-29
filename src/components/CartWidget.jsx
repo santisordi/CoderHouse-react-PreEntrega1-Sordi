@@ -1,4 +1,4 @@
-const carrtioImg = 'assets/images/cart.svg'
+const carrtioImg = '/assets/images/cart.svg'
 
 const CartWidget = () => {
     return (

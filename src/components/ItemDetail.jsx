@@ -5,7 +5,7 @@ const ItemDetail = ({producto}) => {
         <div className="container my-5">
             <div className="row">
                 <div className="col-md-5 offset-md-1">
-                    <img src={producto.imagen} alt={producto.titulo} className="img-fluid" />
+                    <img src={ "/assets/images/" + producto.imagen } alt={producto.titulo} className="img-fluid" />
                 </div>
                 <div className="col-md-5">
                     <h1>{producto.titulo}</h1>

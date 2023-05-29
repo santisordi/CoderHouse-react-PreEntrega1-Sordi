@@ -1,9 +1,65 @@
-
 [
-    {"id": 1, "titulo": "Mate imperial", "descripcion": "Mate calabaza liso negro", "imagen": "https://sapucaimates.com/wp-content/uploads/2021/01/6555.jpg", "precio": 2000, "categoria": "Mate", "stock": 10 },
-    {"id": 2, "titulo": "Mate imperial", "descripcion": "Mate calabaza liso marron", "imagen": "https://sapucaimates.com/wp-content/uploads/2021/01/6563.jpg", "precio": 2000, "categoria": "Mate", "stock": 8 },
-    {"id": 3, "titulo": "Mate imperial", "descripcion": "Mate calabaza Argentina", "imagen": "https://lafamaonline.com/wp-content/uploads/2021/10/mate-calabaza-imperial-bandera.jpeg", "precio": 2500, "categoria": "Mate", "stock": 15 },
-    {"id": 4, "titulo": "Porta Mate", "descripcion": "Matera negro", "imagen": "https://http2.mlstatic.com/D_NQ_NP_802488-MLA46128608234_052021-O.webp", "precio": 7000, "categoria": "Mate", "stock": 6 },
-    {"id": 1, "titulo": "Porta Mate", "descripcion": "Canasta", "imagen": "https://http2.mlstatic.com/D_NQ_NP_814337-MLA43566557322_092020-O.webp", "precio": 7500, "categoria": "Mate", "stock": 12 },
-    {"id": 1, "titulo": "Porta Matel", "descripcion": "Rigido cuero negro", "imagen": "https://http2.mlstatic.com/D_NQ_NP_776170-MLA51478499162_092022-V.jpg", "precio": 8500, "categoria": "Mate", "stock": 6 }
+  {
+    "id": 1,
+    "titulo": "Mate imperial",
+    "descripcion": "Mate calabaza liso negro",
+    "imagen": "Mate imperial 2.jpeg",
+    "precio": 2000,
+    "categoria": "Mate",
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "titulo": "Mate imperial",
+    "descripcion": "Mate calabaza liso marron",
+    "imagen": "Mate imperial.jpeg",
+    "precio": 2000,
+    "categoria": "Mate",
+    "stock": 8
+  },
+  {
+    "id": 3,
+    "titulo": "Mate imperial",
+    "descripcion": "Mate calabaza Argentina",
+    "imagen": "Mate Argentina.jpeg",
+    "precio": 2500,
+    "categoria": "Mate",
+    "stock": 15
+  },
+  {
+    "id": 4,
+    "titulo": "Porta Mate",
+    "descripcion": "Matera negro",
+    "imagen": "Matera rigida oscura.jpeg",
+    "precio": 7000,
+    "categoria": "Matera",
+    "stock": 6
+  },
+  {
+    "id": 5,
+    "titulo": "Porta Mate",
+    "descripcion": "Canasta",
+    "imagen": "Matera canasta.jpeg",
+    "precio": 7500,
+    "categoria": "Matera",
+    "stock": 12
+  },
+  {
+    "id": 6,
+    "titulo": "Porta Mate",
+    "descripcion": "Rigido cuero clara",
+    "imagen": "Matera Rigida Clara.jpeg",
+    "precio": 8500,
+    "categoria": "Matera",
+    "stock": 6
+  },
+  {
+    "id": 7,
+    "titulo": "Set tabla y cuchillo",
+    "descripcion": "Set tabala, cubiertos, vaso y destapador",
+    "imagen": "Set tabla cubiertos 1.jpeg",
+    "precio": 5500,
+    "categoria": "Set asado",
+    "stock": 15
+  }
 ]
