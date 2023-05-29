@@ -3,3 +3,26 @@
     padding: 0;
     margin: 0;
 }
+
+.navbar-brand img{
+    width: 80px;
+}
+
+.navbar-brand{
+    margin-right: 0;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar .navbar-nav .nav-link{
+    font-size: 1.1em;
+}
+
+@media screen and (min-width:992px) {
+    .navbar-brand img{
+        width: 125px;
+        padding: 0 1rem;
+    }
+}

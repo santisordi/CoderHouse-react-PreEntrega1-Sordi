@@ -6,10 +6,10 @@ const Destacados = ()=> {
     return (
         <div className="container-fluid">
             <div className="col">
-                <div className="row bg-dark text-light">
+                <div className="row bg-primary-subtle text-darktext-light">
                     <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-inner text-cener text-center ">
-                            <div className="carousel-item active my-2">
+                            <div className="carousel-item active">
                             3 cuotas sin interes
                             <p><NavLink>Ver opciones de pago</NavLink> </p>
                             
@@ -20,7 +20,7 @@ const Destacados = ()=> {
                                 </div>
                                 <div className="carousel-item">
                                 Todo lo que buscas en Articulos regionales
-                                <p></p>
+                                <p>{""}</p>
                                 </div>
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -34,9 +34,10 @@ const Destacados = ()=> {
                     </div>
                     </div>
                 </div>
-                <div className="row " width={100}>
-                    <img src={LogoMatePava} alt={"Logo mate"}  />
-            
+                <div className=" container">
+                    <div className="raw py-5">
+                    <img className="img-fluid rounded mx-auto d-block" src={LogoMatePava} alt={"Logo mate"}  />
+                    </div>
                 </div> 
         </div>
         //despues puedo cargar otro destacado aca
