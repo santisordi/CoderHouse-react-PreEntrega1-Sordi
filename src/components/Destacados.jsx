@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
-const LogoMatePava = "/assets/images/logo 2.png"
+const LogoMatePava = "/assets/images/1.png"
 
 
 const Destacados = ()=> {
     return (
         <div className="container-fluid">
             <div className="col">
-                <div className="row bg-primary-subtle text-darktext-light">
+                <div className="row bg-primary-subtle text-darktext-light my-4">
                     <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-inner text-cener text-center ">
                             <div className="carousel-item active">

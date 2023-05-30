@@ -1,6 +1,6 @@
 import CartWidget from "./CartWidget";
 import { NavLink } from "react-router-dom";
-const LogoMatePava = "/assets/images/logo 2.png"
+const LogoMatePava = "/assets/images/1.png"
 
 
 const NavBar = () => {
