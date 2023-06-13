@@ -10,7 +10,7 @@ const ItemListContainer = () => {
     useEffect(()=> {
         const db = getFirestore();
         const itemsCollection = collection (db, "items");
-        const q = id ? query(itemsCollection, where("ru", "==", id)) : itemsCollection;
+        const q = id ? query(itemsCollection, where("category", "==", id)) : itemsCollection;
         getDocs(q).then(resultado => {
             if (resultado.size > 0) {
                 setItems(resultado.docs.map(producto => ({id:producto.id, ...producto.data()})));

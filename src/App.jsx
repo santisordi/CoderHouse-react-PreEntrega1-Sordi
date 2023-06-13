@@ -1,4 +1,5 @@
 import './App.css';
+import Cart from './components/Cart';
 import Destacados from './components/Destacados';
 import Error404 from './components/Error404';
 import Footer from './components/Footer';
@@ -18,6 +19,7 @@ function App() {
           <Route path={"/category/:id"} element={<ItemListContainer />}/>
           <Route path={"/item/:id"} element={<ItemDetailContainer />}/>
           <Route path={"/destacados"} element={<Destacados/>}/>
+          <Route path={"/cart"} element={<Cart />}/>
           <Route path={"/*"} element={<Error404 />}/>
   
         </Routes>
