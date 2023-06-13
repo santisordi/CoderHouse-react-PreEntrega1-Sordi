@@ -1,65 +1,274 @@
 [
   {
-    "id": 1,
+    "rubro": 1,
+    "codigo": 1,
     "titulo": "Mate imperial",
-    "descripcion": "Mate calabaza liso negro",
+    "descripcion": "Mate Imperial Liso Virola de Alpaca Lisa J",
     "imagen": "Mate imperial 2.jpeg",
-    "precio": 2000,
-    "categoria": "Mate",
+    "precioMay": 6.730,
+    "precioMem": 13460,
     "stock": 10
   },
   {
-    "id": 2,
+    "rubro": 1,
+    "codigo": 2,
     "titulo": "Mate imperial",
-    "descripcion": "Mate calabaza liso marron",
-    "imagen": "Mate imperial.jpeg",
-    "precio": 2000,
-    "categoria": "Mate",
+    "descripcion": "Mate Imperial Virola de Alpaca Estampada J",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 7475,
+    "precioMem": 14950,
+    "stock": 10
+  },
+  {
+    "rubro": 1,
+    "codigo": 11,
+    "titulo": "Mate imperial",
+    "descripcion": "Mate Imperial virola de acero Premiun N",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 5700,
+    "precioMem": 11400,
     "stock": 8
   },
   {
-    "id": 3,
+    "rubro": 1,
+    "codigo": 20,
     "titulo": "Mate imperial",
-    "descripcion": "Mate calabaza Argentina",
-    "imagen": "Mate Argentina.jpeg",
-    "precio": 2500,
-    "categoria": "Mate",
+    "descripcion": "Mate Imperial albarrobo negro",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 6820,
+    "precioMem": 13640,
+    "stock": 8
+  },
+  {
+    "rubro": 1,
+    "codigo": 25,
+    "titulo": "Mate imperial",
+    "descripcion": "Mate Imperial copita virola de alpaca lisa",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 6800,
+    "precioMem": 13600,
     "stock": 15
   },
   {
-    "id": 4,
-    "titulo": "Porta Mate",
-    "descripcion": "Matera negro",
-    "imagen": "Matera rigida oscura.jpeg",
-    "precio": 7000,
-    "categoria": "Matera",
-    "stock": 6
-  },
-  {
-    "id": 5,
-    "titulo": "Porta Mate",
-    "descripcion": "Canasta",
-    "imagen": "Matera canasta.jpeg",
-    "precio": 7500,
-    "categoria": "Matera",
-    "stock": 12
-  },
-  {
-    "id": 6,
-    "titulo": "Porta Mate",
-    "descripcion": "Rigido cuero clara",
-    "imagen": "Matera Rigida Clara.jpeg",
-    "precio": 8500,
-    "categoria": "Matera",
-    "stock": 6
-  },
-  {
-    "id": 7,
-    "titulo": "Set tabla y cuchillo",
-    "descripcion": "Set tabala, cubiertos, vaso y destapador",
-    "imagen": "Set tabla cubiertos 1.jpeg",
-    "precio": 5500,
-    "categoria": "Set asado",
+    "rubro": 1,
+    "codigo": 30,
+    "titulo": "Mate imperial",
+    "descripcion": "Mate Imperial argentina virola lisa",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 8740,
+    "precioMem": 17480,
     "stock": 15
+  },
+  {
+    "rubro": 1,
+    "codigo": 32,
+    "titulo": "Mate imperial",
+    "descripcion": "Mate Imperial doble cuero crocco virola alpaca lisa",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 8740,
+    "precioMem": 17480,
+    "stock": 15
+  },
+  {
+    "rubro": 3,
+    "codigo": 1,
+    "titulo": "Juegos para el asado",
+    "descripcion": "Tabla de araucaria 0.35 + funda cuchillo + campero chico 1/2 cacha combinado ancho F/N",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 3665,
+    "precioMem": 7330,
+    "stock": 8
+  },
+  {
+    "rubro": 3,
+    "codigo": 2,
+    "titulo": "Juegos para el asado",
+    "descripcion": "Tabla de araucaria 0.35 + funda cuchillo + Juego Artesanal 18",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 4675,
+    "precioMem": 9350,
+    "stock": 8
+  },
+  {
+    "rubro": 3,
+    "codigo": 3,
+    "titulo": "Juegos para el asado",
+    "descripcion": "Tabla de araucaria 0.35 + funda cuchillo + Juego cuchillo y tenedor tipo tramontina",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 2000,
+    "precioMem": 4000,
+    "stock": 8
+  },
+  {
+    "rubro": 3,
+    "codigo": 4,
+    "titulo": "Juegos para el asado",
+    "descripcion": "Tabla de araucaria 0.45 + funda cuchillo + campero 1/2 cacha combinado ancho + Tenedor/Pinche",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 3900,
+    "precioMem": 7800,
+    "stock": 8
+  },
+  {
+    "rubro": 3,
+    "codigo": 5,
+    "titulo": "Juegos para el asado",
+    "descripcion": "Tabla de araucaria 0.45 + funda para juego de cubierto + Juego doble combinado mediano tacha F/N",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 6420,
+    "precioMem": 12840,
+    "stock": 7
+  },
+  {
+    "rubro": 3,
+    "codigo": 19,
+    "titulo": "Juegos para el asado",
+    "descripcion": "Vaso acero",
+    "imagen": "Tabla de araucaria 0.45 + funda cuchillo + Juego doble combinado mediano tacha F/N",
+    "precioMay": 6420,
+    "precioMem": 12840,
+    "stock": 8
+  },
+  {
+    "rubro": 5,
+    "codigo": 1,
+    "titulo": "Canasta Matera",
+    "descripcion": "Canasta matera palito eco cuero",
+    "imagen": "Tabla de araucaria 0.45 + funda cuchillo + Juego doble combinado mediano tacha F/N",
+    "precioMay": 1230,
+    "precioMem": 2460,
+    "stock": 8
+  },  
+  {
+    "rubro": 5,
+    "codigo": 11,
+    "titulo": "Canasta Matera",
+    "descripcion": "Canasta matera flex eco cuero crocco o vibora",
+    "imagen": "Tabla de araucaria 0.45 + funda cuchillo + Juego doble combinado mediano tacha F/N",
+    "precioMay": 1385,
+    "precioMem": 1370,
+    "stock": 8
+  },
+  {
+    "rubro": 5,
+    "codigo": 20,
+    "titulo": "Canasta Matera",
+    "descripcion": "Canasta vaqueta gravada",
+    "imagen": "Tabla de araucaria 0.45 + funda cuchillo + Juego doble combinado mediano tacha F/N",
+    "precioMay": 6460,
+    "precioMem": 12920,
+    "stock": 8
+  },
+  {
+    "rubro": 5,
+    "codigo": 16,
+    "titulo": "Canasta Matera",
+    "descripcion": "Canasta matera combinada SAMAX crocco y manija de cuero",
+    "imagen": "Tabla de araucaria 0.45 + funda cuchillo + Juego doble combinado mediano tacha F/N",
+    "precioMay": 3385,
+    "precioMem": 6770,
+    "stock": 8
+  },    
+  {
+    "rubro": 5,
+    "codigo": 1,
+    "titulo": "Bolso Matero",
+    "descripcion": "Bolso matero eco cuero",
+    "imagen": "Tabla de araucaria 0.45 + funda cuchillo + Juego doble combinado mediano tacha F/N",
+    "precioMay": 2000,
+    "precioMem": 4000,
+    "stock": 8
+  },
+  {
+    "rubro": 5,
+    "codigo": 10,
+    "titulo": "Bolso Matero",
+    "descripcion": "Bolso matero broche eco cuero",
+    "imagen": "Tabla de araucaria 0.45 + funda cuchillo + Juego doble combinado mediano tacha F/N",
+    "precioMay": 2550,
+    "precioMem": 5100,
+    "stock": 8
+  },
+  {
+    "rubro": 5,
+    "codigo": 2,
+    "titulo": "Bolso Matero",
+    "descripcion": "Bolso matero eco cuero crocco o vibora",
+    "imagen": "Tabla de araucaria 0.45 + funda cuchillo + Juego doble combinado mediano tacha F/N",
+    "precioMay": 2140,
+    "precioMem": 4280,
+    "stock": 8
+  },
+  {
+    "rubro": 5,
+    "codigo": 1,
+    "titulo": "Porta Termos",
+    "descripcion": "Porta termo eco cuero para termo Stanley",
+    "imagen": "Tabla de araucaria 0.45 + funda cuchillo + Juego doble combinado mediano tacha F/N",
+    "precioMay": 2390,
+    "precioMem": 2550,
+    "stock": 8
+  },
+    {
+    "rubro": 4,
+    "codigo": "324-02",
+    "titulo": "Juego Cuchillo",
+    "descripcion": "Juego parrillero corto tenedor resorte",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 8740,
+    "precioMem": 17480,
+    "stock": 10
+  },
+  {
+    "rubro": 4,
+    "codigo": "325-04",
+    "titulo": "Juego Cuchillo",
+    "descripcion": "Juego parrillero corto tenedor resorte cuchilla cocinera",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 6115,
+    "precioMem": 12230,
+    "stock": 15
+  },
+  {
+    "rubro": 4,
+    "codigo": "303-18",
+    "titulo": "Juego Cuchillo",
+    "descripcion": "Juego doble madera J con Boton AC Inox",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 3520,
+    "precioMem": 7040,
+    "stock": 13
+  },
+  {
+    "rubro": 4,
+    "codigo": "305-19",
+    "titulo": "Juego Cuchillo",
+    "descripcion": "Juego doble combinado c/vaina Inox",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 3680,
+    "precioMem": 7360,
+    "stock": 5
+  },
+  {
+    "rubro": 4,
+    "codigo": "305-19A",
+    "titulo": "Juego Cuchillo",
+    "descripcion": "Juego doble combinado Inoxidable",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 4195,
+    "precioMem": 8390,
+    "stock": 10
+  },
+  {
+    "rubro": 4,
+    "codigo": "304-21",
+    "titulo": "Juego Cuchillo",
+    "descripcion": "Juego triple madera curvo J con boton c/ vaina Inox",
+    "imagen": "Mate imperial 2.jpeg",
+    "precioMay": 4300,
+    "precioMem": 8600,
+    "stock": 7
   }
+      
+
 ]
