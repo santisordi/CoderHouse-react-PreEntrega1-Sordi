@@ -1,26 +1,24 @@
 import { useEffect, useState } from "react";
-import productos from "./json/productos.json"
-import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
+import { getFirestore, getDoc, doc } from "firebase/firestore"
+import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () => {
-        const [item, setItem] = useState({});
+        const [item, setItems] = useState({});
         const {id} = useParams();
 
-        useEffect(()=>{
-            const promesa = new Promise((resolve)=>{
-                setTimeout(() => { 
-                    resolve(productos.find(item => item.id === parseInt(id))); 
+        useEffect(()=> {
+            const db = getFirestore();
+            const docRef = doc(db, "items", id)
+            getDoc(docRef).then(resultado => {
+                if (resultado.exists()) {
+                    setItems ({id:resultado.id, ...resultado.data()});
+                } else {
+                    console.log("Error! no hay productos")
+                }
+            });
+        },[id]);
 
-                }, 2000);
-        })
-
-        promesa.then(data => {
-            setItem(data);
-        })
-
-    },[id]);
-    
     return(
         <div> 
             <ItemDetail producto= {item}/>

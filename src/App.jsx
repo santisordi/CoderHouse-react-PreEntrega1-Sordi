@@ -13,17 +13,17 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <NavBar/>
+        <NavBar />
         <Routes>
           <Route path={"/"} element={<ItemListContainer />}/>
           <Route path={"/category/:id"} element={<ItemListContainer />}/>
           <Route path={"/item/:id"} element={<ItemDetailContainer />}/>
-          <Route path={"/destacados"} element={<Destacados/>}/>
+          <Route path={"/destacados"} element={<Destacados />}/>
           <Route path={"/cart"} element={<Cart />}/>
           <Route path={"/*"} element={<Error404 />}/>
   
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );

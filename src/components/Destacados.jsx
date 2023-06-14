@@ -34,7 +34,7 @@ const Destacados = ()=> {
                     </div>
                     </div>
                 </div>
-                <div className=" container">
+                <div className=" container bg-dark" >
                     <div className="raw py-5">
                     <img className="img-fluid rounded mx-auto d-block" src={LogoMatePava} alt={"Logo mate"}  />
                     </div>

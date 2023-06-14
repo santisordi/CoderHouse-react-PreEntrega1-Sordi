@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import productos from "./json/productos.json"
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
-import { getFirestore, addDoc, collection, getDocs, where, query } from "firebase/firestore"
+import { getFirestore, collection, getDocs, where, query } from "firebase/firestore"
+//import productos from "./json/productos.json"
+
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
     const {id} = useParams(); 
@@ -10,7 +11,7 @@ const ItemListContainer = () => {
     useEffect(()=> {
         const db = getFirestore();
         const itemsCollection = collection (db, "items");
-        const q = id ? query(itemsCollection, where("category", "==", id)) : itemsCollection;
+        const q = id ? query(itemsCollection, where("categoria", "==", id)) : itemsCollection;
         getDocs(q).then(resultado => {
             if (resultado.size > 0) {
                 setItems(resultado.docs.map(producto => ({id:producto.id, ...producto.data()})));
@@ -35,7 +36,7 @@ const ItemListContainer = () => {
     return (
             <div className="container my-5">
                 <div className="row">
-                <ItemList productos={items}/> 
+                <ItemList productos={items} /> 
                 </div>
             </div>
     );

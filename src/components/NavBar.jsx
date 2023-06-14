@@ -27,16 +27,16 @@ const NavBar = () => {
                 <NavLink to= {"/destacados"} className="nav-link text-light" aria-current="page" >Destacados</NavLink>
                 </li>
                 <li className="nav-item">
-                <NavLink to= {"/category/Mate"} className="nav-link text-light">Mates</NavLink>
+                <NavLink to= {"/category/Mates"} className="nav-link text-light">Mates</NavLink>
                 </li>
                 <NavLink className="navbar-brand d-none d-lg-block" to = {"/"}>
                 <img src={LogoMatePava} alt="logo mate"/>
                 </NavLink>
                 <li className="nav-item">
-                <NavLink to= {"/category/Matera"} className="nav-link text-light">Materas</NavLink>
+                <NavLink to= {"/category/Materas"} className="nav-link text-light">Materas</NavLink>
                 </li>
                 <li className="nav-item">
-                <NavLink to= {"/category/Set asado"} className="nav-link text-light">Sets Asador</NavLink>
+                <NavLink to= {"/category/Sets asador"} className="nav-link text-light">Sets Asador</NavLink>
                 </li>
             </ul>
             </div>
