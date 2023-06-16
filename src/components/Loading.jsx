@@ -3,8 +3,8 @@ const Loading = () => {
         <div className="container">
             <div className="row">
                 <div className="col p-5 text-center">
-                    <div class="spinner-grow" role="status">
-                        <span class="visually-hidden">Cargando...</span>
+                    <div className="spinner-grow" role="status">
+                        <span className="visually-hidden">Cargando...</span>
                     </div>
                 </div>
             </div>
