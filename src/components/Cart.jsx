@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "./context/CartContext";
 import trash from "./image/trash.svg";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
     const {cart, removeItem, clear, cartTotal, sumTotal} = useContext(CartContext)
@@ -36,10 +37,10 @@ const Cart = () => {
                                 cart.map(item => (
                                     <tr key={item.id}>
                                         <td><img src={"/assets/images/" + item.imagen} alt={item.titulo} width={90} /></td>
-                                        <td>{item.titulo}</td>
-                                        <td>{item.quantity} x ${item.precioMay}</td>
-                                        <td className="text-center">${item.quantity * item.precioMay}</td>
-                                        <td className="text-end"><button className="btn btn-light" onClick={() => {removeItem(item.id)}} title="Eliminar Producto"><img src={trash} alt="Eliminar Producto" width={25} /></button></td>
+                                        <td className="align-middle">{item.titulo}</td>
+                                        <td className="align-middle">{item.quantity} x ${item.precioMay}</td>
+                                        <td className="text-center align-middle">${item.quantity * item.precioMay}</td>
+                                        <td className="text-end align-middle"><button className="btn btn-light" onClick={() => {removeItem(item.id)}} title="Eliminar Producto"><img src={trash} alt="Eliminar Producto" width={25} /></button></td>
                                     </tr>
                                 ))
                             }
@@ -51,6 +52,10 @@ const Cart = () => {
                             <tr>
                                 <td colSpan={4}>&nbsp;</td>
                                 <td className="text-end"><button className="btn btn-light" onClick={() => {clear()}} title="Vaciar Carrito">Vaciar Carrito</button></td>
+                            </tr>
+                            <tr>
+                                <td colSpan={4}>&nbsp;</td>
+                                <td className="text-end"><Link to = {"/checkout"}className="btn btn-light" title="Finalizar compra">Vaciar Carrito</Link></td>
                             </tr>
                         </tbody>
                     </table>
