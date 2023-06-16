@@ -39,26 +39,30 @@ const Cart = () => {
                                         <td><img src={"/assets/images/" + item.imagen} alt={item.titulo} width={90} /></td>
                                         <td className="align-middle">{item.titulo}</td>
                                         <td className="align-middle">{item.quantity} x ${item.precioMay}</td>
-                                        <td className="text-center align-middle">${item.quantity * item.precioMay}</td>
-                                        <td className="text-end align-middle"><button className="btn btn-light" onClick={() => {removeItem(item.id)}} title="Eliminar Producto"><img src={trash} alt="Eliminar Producto" width={25} /></button></td>
+                                        <td className="align-middle text-center">${item.quantity * item.precioMay}</td>
+                                        <td className="align-middle text-end"><button className="btn btn-light" onClick={() => {removeItem(item.id)}} title="Eliminar Producto"><img src={trash} alt="Eliminar Producto" width={25} /></button></td>
                                     </tr>
                                 ))
                             }
                             <tr>
-                                <td colSpan={3} className="text-end">Total a Pagar</td>
+                                <td colSpan={3} className="align-middle text-end">Total a Pagar</td>
                                 <td className="text-center">${sumTotal()}</td>
                                 <td>&nbsp;</td>
                             </tr>
-                            <tr>
-                                <td colSpan={4}>&nbsp;</td>
-                                <td className="text-end"><button className="btn btn-light" onClick={() => {clear()}} title="Vaciar Carrito">Vaciar Carrito</button></td>
-                            </tr>
-                            <tr>
-                                <td colSpan={4}>&nbsp;</td>
-                                <td className="text-end"><Link to = {"/checkout"}className="btn btn-light" title="Finalizar compra">Vaciar Carrito</Link></td>
-                            </tr>
                         </tbody>
                     </table>
+
+                    <div className="row">
+                        <div className="col text-end">
+                            <button className="btn btn-light" onClick={() => {clear()}} title="Vaciar Carrito">Vaciar Carrito</button>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col text-end">
+                            <Link to = {"/checkout"}className="btn btn-light" title="Finalizar compra">Finalizar compra</Link>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
