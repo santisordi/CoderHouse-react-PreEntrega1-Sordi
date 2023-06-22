@@ -35,7 +35,7 @@ const CartContextProvider = ({children}) => {
     const sumTotal = () => {
         return cart.reduce((acum, item) => acum += item.quantity * item.precioMay, 0); 
     }
- 
+
     return (
         <CartContext.Provider value={{ cart, addItem, removeItem, clear, cartTotal, sumTotal }} >
             {children}

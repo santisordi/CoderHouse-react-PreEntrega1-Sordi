@@ -1,4 +1,3 @@
-
 import { useContext, useEffect, useState } from "react";
 import ItemCount from "./ItemCount";
 import { CartContext } from "./context/CartContext";

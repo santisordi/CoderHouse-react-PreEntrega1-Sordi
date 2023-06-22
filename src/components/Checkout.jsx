@@ -1,14 +1,14 @@
 import { useContext, useState } from "react";
 import { CartContext } from "./context/CartContext"
-import { addDoc, collection, doc, getFirestore, updateDoc, writeBatch } from "firebase/firestore";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
 
 
 
 const Checkout = () => {
-    const [nombre, setnombre] = useState("");
-    const [email, setemail] = useState("");
-    const [telefono, settelefono] = useState("");
-    const [orderId, setorderId] = useState("");
+    const [nombre, setNombre] = useState("");
+    const [email, setEmail] = useState("");
+    const [telefono, setTelefono] = useState("");
+    const [orderId, setOrderId] = useState("");
     const { cart, sumTotal } = useContext(CartContext);
 
     const generarOrden = () => {
@@ -23,23 +23,24 @@ const Checkout = () => {
             return false;
         }
         
-        const comprador = { name: nombre, phone: telefono, email: email}
-        const items = cart.map(item => ({id:item.id, title:item.titulo, price:item.precio}))  
+        const comprador = { name:nombre, phone:telefono, email:email}
+        const items = cart.map(item => ({id:item.id, title:item.titulo, price:item.precioMay}))  
         const fecha = new Date();
         const date = `${fecha.getFullYear()}-${fecha.getMonth()+1}-${fecha.getDate()} ${fecha.getHours()}:${fecha.getMinutes()}`;
         const total = sumTotal();
-        const order = {buyer:comprador, items:items, date:date, total:total};
+        const order = {buyer:comprador, items:items, date:date, total:total}; 
 
+       //subir un documento a firestore
         const db = getFirestore();
         const OrdersCollection  = collection (db, "orders")
         addDoc(OrdersCollection, order).then(resultado =>{
-            setorderId(resultado.id);
+            setOrderId(resultado.id);
         })
         .catch(resultado => {
             console.log("Error! No se pudo completar la compra!")
-        })
+        });
     }
-    
+
     //validar formulario
     return (
         <div className="container my-5">
@@ -48,15 +49,15 @@ const Checkout = () => {
                     <form>
                         <div className="mb-3">
                             <label htmlFor ="nombre" className="form-label">Nombre y Apellido</label>
-                            <input type="text" className="form-control" aria-describedby="emailHelp" onInput={(e) => {setnombre(e.target.value)} }/>
+                            <input type="text" className="form-control" aria-describedby="emailHelp" onInput={(e) => {setNombre(e.target.value)} }/>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email</label>
-                            <input type="email" className="form-control" onInput={(e) => {setemail(e.target.value)} } />
+                            <input type="email" className="form-control" onInput={(e) => {setEmail(e.target.value)} } />
                         </div>
                         <div className="mb-3">
                             <label className="form-label" htmlFor="telefono">Telefono</label>
-                            <input type="text" className="form-control" onInput={(e) => {settelefono(e.target.value)} } />
+                            <input type="text" className="form-control" onInput={(e) => {setTelefono(e.target.value)} } />
                         </div>
                         <button type="button" className="btn btn-primary" onClick={ generarOrden }>Generar Pedido</button>
                     </form>
