@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { CartContext } from "./context/CartContext"
 import { addDoc, collection, getFirestore } from "firebase/firestore";
+import { Navigate } from "react-router-dom";
 
 
 
@@ -59,7 +60,7 @@ const Checkout = () => {
                             <label className="form-label" htmlFor="telefono">Telefono</label>
                             <input type="text" className="form-control" onInput={(e) => {setTelefono(e.target.value)} } />
                         </div>
-                        <button type="button" className="btn btn-primary" onClick={ generarOrden }>Generar Pedido</button>
+                        <button type="button" className="btn btn-primary" onClick={ generarOrden }>Generar  </button>
                     </form>
                 </div>
             
@@ -84,17 +85,11 @@ const Checkout = () => {
                         </tbody>
                     </table>
                 </div>
-                <div className="row">
-                <div className="col text-center">
-                    {orderId ? <div className="alert alert-warning" role="alert"> 
-                    <h1 className="fs-1 text">Gracias por tu Compra!</h1>
-                        <p>Tu Orden de Compra es: <b>{orderId}</b></p>
-                    </div> : ""}  
-                </div>
-
-                </div>
-            </div> 
             </div>
+            <div>
+                {orderId ? <Navigate to = {"/FinalPag/" + orderId } /> : "" };            
+            </div>
+        </div>
     )
 }
 

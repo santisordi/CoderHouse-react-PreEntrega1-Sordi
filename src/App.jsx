@@ -9,6 +9,7 @@ import NavBar from './components/NavBar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CartContextProvider from './components/context/CartContext';
 import Checkout from './components/Checkout';
+import FinalPag from './components/FinalPag';
 
 
 function App() {
@@ -18,13 +19,14 @@ function App() {
         <BrowserRouter>
           <NavBar />
           <Routes>
-            <Route path={"/"} element={<ItemListContainer />}/>
-            <Route path={"/category/:id"} element={<ItemListContainer />}/>
-            <Route path={"/item/:id"} element={<ItemDetailContainer />}/>
-            <Route path={"/destacados"} element={<Destacados />}/>
+            <Route path={"/"} element={<ItemListContainer />} />
+            <Route path={"/category/:id"} element={<ItemListContainer />} />
+            <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+            <Route path={"/destacados"} element={<Destacados />} />
             <Route path={"/cart"} element={<Cart />}/>
-            <Route path={"/checkout"} element={<Checkout />}/>
-            <Route path={"/*"} element={<Error404 />}/>
+            <Route path={"/checkout"} element={<Checkout />} />
+            <Route path={"/FinalPag/:orderId"} element={<FinalPag />} />
+            <Route path={"/*"} element={<Error404 />} />
           </Routes>
           <Footer />
         </BrowserRouter>
