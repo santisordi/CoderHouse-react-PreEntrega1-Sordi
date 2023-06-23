@@ -1,17 +1,18 @@
 import { useContext, useState } from "react";
 import { CartContext } from "./context/CartContext"
 import { addDoc, collection, getFirestore } from "firebase/firestore";
-import { Navigate } from "react-router-dom";
-
+import { Navigate, useNavigate  } from "react-router-dom";
+import Swal from 'sweetalert2';
 
 
 const Checkout = () => {
+    const navigate = useNavigate();
     const [nombre, setNombre] = useState("");
     const [email, setEmail] = useState("");
     const [telefono, setTelefono] = useState("");
     const [orderId, setOrderId] = useState("");
     const { cart, sumTotal } = useContext(CartContext);
-
+    
     const generarOrden = () => {
         if (nombre.length === 0){
             return false;
@@ -36,9 +37,16 @@ const Checkout = () => {
         const OrdersCollection  = collection (db, "orders")
         addDoc(OrdersCollection, order).then(resultado =>{
             setOrderId(resultado.id);
+            navigate(`/FinalPag/${resultado.id}`, {
+                state: { nombre, email, telefono },
+            });
         })
         .catch(resultado => {
-            console.log("Error! No se pudo completar la compra!")
+            new Swal({
+                title: "No se encontraron resultados",
+                icon: "error",
+                button: "ok"
+            })
         });
     }
 
