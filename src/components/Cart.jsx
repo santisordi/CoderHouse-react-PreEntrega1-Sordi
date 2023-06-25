@@ -58,7 +58,7 @@ const Cart = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col text-end">
+                        <div className="col text-end py-2">
                             <Link to = {"/checkout"}className="btn btn-light" title="Finalizar compra">Finalizar compra</Link>
                         </div>
                     </div>

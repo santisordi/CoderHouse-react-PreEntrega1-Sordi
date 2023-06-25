@@ -10,8 +10,11 @@ const NavBar = () => {
                 <NavLink className="navbar-brand d-lg-none" to = {"/"}>
                 <img src={LogoMatePava} alt="logo mate"/>
                 </NavLink>
+                <div className="ms-auto">
+                    <CartWidget />
+                </div>
             <button
-            className="navbar-toggler"
+            className="navbar-toggler ms-auto"
             type="button text-light"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -39,10 +42,7 @@ const NavBar = () => {
                 <NavLink to= {"/category/Sets asador"} className="nav-link text-light">Sets Asador</NavLink>
                 </li>
             </ul>
-            </div>
-            <div className="p-3">
-            <CartWidget />
-            </div>
+            </div>            
         </div>
         </nav>
     );

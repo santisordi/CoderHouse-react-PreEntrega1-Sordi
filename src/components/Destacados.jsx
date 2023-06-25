@@ -4,7 +4,7 @@ const LogoMatePava = "/assets/images/1.png"
 
 const Destacados = ()=> {
     return (
-        <div className="container-fluid">
+        <div className="container">
             <div className="col">
                 <div className="row bg-primary-subtle text-darktext-light my-4">
                     <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
@@ -21,7 +21,7 @@ const Destacados = ()=> {
                                 <div className="carousel-item">
                                 Todo lo que buscas en Articulos regionales
                                 <p>{""}</p>
-                                </div>
+                                </div>  
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -34,7 +34,7 @@ const Destacados = ()=> {
                     </div>
                     </div>
                 </div>
-                <div className=" container bg-dark" >
+                <div className=" container bg-dark " >
                     <div className="raw py-5">
                     <img className="img-fluid rounded mx-auto d-block" src={LogoMatePava} alt={"Logo mate"}  />
                     </div>

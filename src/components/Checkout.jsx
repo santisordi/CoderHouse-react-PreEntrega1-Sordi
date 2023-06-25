@@ -68,7 +68,7 @@ const Checkout = () => {
                             <label className="form-label" htmlFor="telefono">Telefono</label>
                             <input type="text" className="form-control" onInput={(e) => {setTelefono(e.target.value)} } />
                         </div>
-                        <button type="button" className="btn btn-primary" onClick={ generarOrden }>Generar  </button>
+                        <button type="button" className="btn btn-light" onClick={ generarOrden }>Generar Orden</button>
                     </form>
                 </div>
             
